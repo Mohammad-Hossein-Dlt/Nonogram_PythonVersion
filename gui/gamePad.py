@@ -68,7 +68,6 @@ class GamePad(tk.Frame, Nonogram):
             while len(somenonepoints) != number:
                 n = random.choice(self.Nonepoints)
                 if n not in somenonepoints : somenonepoints.append(n)
-            print(len(somenonepoints))
             for falsebtn in somenonepoints : self.btns[falsebtn].configure(background= ThemeData.falsebuttonColor , state= "disabled", text= 'X')
 #-------------------------------------------------------------------------------
 class Labels(tk.Label):
